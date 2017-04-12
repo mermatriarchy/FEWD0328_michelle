@@ -1,0 +1,25 @@
+
+button {
+    background-color: #cccccc;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.create{
+	background-color: #ace600;
+	border-radius: 1px;
+	transition: background-color 1.5s;
+	-webkit-transition: background-color 1.5s;
+}
+.create:hover{
+	background-color: #669900;
+}
+.tiles{
+	display:inline-block;
+	width: 25%;
+	margin: 0 auto;
+}
