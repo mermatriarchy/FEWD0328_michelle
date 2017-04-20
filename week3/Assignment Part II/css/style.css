@@ -51,6 +51,7 @@ body {
      line-height: 1.4;
      font-family: 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
      font-weight: 300;
+     background-color: #f2f2f2;
 }
 a {
   text-decoration: none;
@@ -64,18 +65,52 @@ a {
   width: 960px;
   margin: 0 auto;
 }
-header {
+#main-column{
+  display: inline-block;
+  width: 700px;
+  margin: 0 auto;
+  margin: 50px 0 150px;
+}
+#sidebar{
+  display: inline-block;
+  width: 240px;
+  margin: 0 auto;
+  float: right;
+  margin-top: 50px;
+}
+img{
+  padding: 20px 0 20px;
+}
+header.landing-page{
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center;
   background-size: cover;
   padding-top: 32px;
 }
-header .logo{
+header.blog{
+  background-color: black;
+  padding-top: 32px;
+  height: 120px;
+}
+h1.logo{
   color: #fff;
   font-weight: 800;
-  margin: 120px 0 100px 0;
+  font-size: 36px;
+  display: inline;
 }
-header .logo h2{
+nav#main-nav{
+  display: inline-block;
+  float: right;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 18px;
+}
+nav#main-nav ul li{
+  display: inline-block;
+  color: #f9e42e;
+  padding: 0 0 0 30px;
+}
+header h2{
   color: #fff;
   font-weight: 600;
   font-size: 36px;
@@ -124,8 +159,56 @@ header .logo h2{
   padding: 100px 0 80px;
   background: url(../images/testimonial_bg.jpg) no-repeat;
   background-size: cover;
-
 }
+#main-column h2{
+  font-size: 36px;
+  font-weight: 800;
+  color: #033048;
+  padding-bottom: 15px;
+}
+#main-column p{
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #737373; 
+}
+#main-column span{
+  font-size: 18px;
+  font-weight: 1000;
+  color: #033048;
+  float: right;
+  padding-top: 40px;
+}
+#main-column .post{
+  padding: 25px 0 80px;
+}
+#main-column > div:nth-child(n){
+  border-bottom: 1px solid grey;
+}
+
+#sidebar h3{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 30px 0 10px ;
+  color: #033048;
+}
+#sidebar ul li{
+  font-size: 16px;
+  font-weight: 200;
+  color: #737373
+}
+#sidebar p{
+  font-size: 14px;
+  font-weight: 200;
+  color: #737373
+}
+#sidebar #learnmore{
+  color: #033048;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
 blockquote{
   width: 500px;
   text-align: center;

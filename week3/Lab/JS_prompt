@@ -1,0 +1,46 @@
+get trget_temperature
+target_temperature = 72
+repeat forever
+get current_temperature
+current_temperature = get_sensor_reading
+
+get x
+x = 72
+repeat forever
+get t
+t = get_sensor_reading
+if x < t
+turn_on_heater
+if x > t 
+turn_off_heater
+end of repeating code
+
+-----------------------------------------
+
+r > s 
+s > p
+p > r
+
+player_1 = r
+if player_2 = s
+p1 win
+
+p1 = s
+if p2 = p
+p1 win
+
+p1 = p
+if p2 = s
+p1 win
+
+player_1 = r
+if player_2 = p
+p2 win
+
+p1 = s
+if p2 = r
+p2 win
+
+p1 = p
+if p2 = s
+p2 win
